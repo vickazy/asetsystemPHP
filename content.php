@@ -1,4 +1,5 @@
 <?php
+//jika user belum melakukan login 
     if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
         echo "<link =\"css/style_login.css\" type=\"text/css\" rel=\"stylesheet\">
          <p class=\"error-code\">
