@@ -126,7 +126,11 @@ else{
 			 												  nama_aset='$nama_aset',
 			 												  area = '$area',
 			 												  customer= '$customer',
-			 												  cluster = ''";
+															   cluster = '$cluster',
+															   tgl_terima 	   = '$tglTerima', 
+															   koordinator = '$koordinator',
+															   keterangan = '$keterangan'";
+					mysqli_query($konek, $query_history);
 			 }
 			 header("location:../../media.php?module=".$module);
 	}
