@@ -321,7 +321,7 @@ else{
                 </li>
             </ul>
             </div>";
-    //form add aset   
+    //form edit aset
        echo "<div class=\"row\">
     <div class=\"box col-md-12\">
         <div class=\"box-inner\">

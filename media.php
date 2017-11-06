@@ -379,7 +379,6 @@ else{
                     "columns": [
                         {"data":"noreg"},
                         {"data":"no_aset"},
-                        {"data":"pic"},
                         {"data": "nama_aset"},
                         {"data":"area"},
                         {"data":"tgl_terima"},
@@ -390,9 +389,6 @@ else{
             });
         </script>
 <!-- end ajax history -->
-
-
-
 <!-- select or dropdown enhancer -->
 <script src="bower_components/chosen/chosen.jquery.min.js"></script>
 <!-- plugin for gallery image view -->

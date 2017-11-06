@@ -60,7 +60,6 @@ else{
     <tr>
         <th>Noreg</th>
         <th>No Aset</th>
-        <th>PIC</th>
         <th>Nama Aset</th>
         <th>Area</th>
         <th>Tgl.Terima</th>
