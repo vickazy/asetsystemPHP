@@ -87,7 +87,7 @@ else{
     
     //data mutasi 
     elseif($_GET['module']=='mutasi'){
-        if($_SESSION['leveluser']=='admin' OR $_SESSION['leveluser']=='user']){
+        if($_SESSION['leveluser']=='admin' OR $_SESSION['leveluser']=='user'){
             include "modul/mod_mutasi/mutasi.php";
         }
     }
