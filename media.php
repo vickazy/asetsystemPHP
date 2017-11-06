@@ -168,7 +168,7 @@ else{
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="?module=beranda"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
                 <span>SIMSET</span></a>
 
             <!-- user dropdown starts -->
