@@ -26,7 +26,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ( $_SERVER['HTTP_X_REQUESTED_WIT
             'db' => 'id_input',
             'dt' => 'tools',
             'formatter' => function( $d ) {
-                return '<a href="media.php?module=aset&act=editaset&id=' . $d . '">Edit</a> | <a href="modul/mod_aset/aksi_aset.php?module=aset&act=hapus&id='.$d.'">Delete</a>';
+                return '<a href="media.php?module=mutasi&act=editmutasi&id='.$d.'">Mutasi</a>|<a href="media.php?module=aset&act=editaset&id=' . $d . '">Edit</a> | <a href="modul/mod_aset/aksi_aset.php?module=aset&act=hapus&id='.$d.'">Delete</a>';
             }
         )
     );
