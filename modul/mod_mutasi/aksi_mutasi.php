@@ -19,6 +19,6 @@ else{
         $act = $_GET['act'];
 
         if($module=='mutasi' AND $act=='update'){
-
+                $no_aset = $_POST['no_aset'];
         }
 }

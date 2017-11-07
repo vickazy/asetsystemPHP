@@ -218,7 +218,11 @@ else {
                         <label class=\"control-label\">Cluster</label>
                         <input type=\"text\" class=\"form-control\" name=\"cluster\" placeholder=\"Cluster\">
                     </div>
-        
+
+                    <div class=\"form-group col-md-3\">
+                        <label class=\"control-label\">Tgl. Terima</label>
+                        <input type=\"text\" class=\"form-control\" name=\"tgl_awal\"  id=\"datepicker\" value=\"$tanggal\">
+                    </div>
                     <div class=\"form-group col-md-3\">
                         <label class=\"control-label\">Tgl. Terima</label>
                         <input type=\"text\" class=\"form-control\" name=\"tgl_terima\"  id=\"datepicker\" value=\"$tanggal\">
