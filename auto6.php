@@ -1,10 +1,11 @@
 <?php
-include_once ('library/inc.connection.php');
+//auto 6 new
+include_once ('config/koneksi.php');
 
 //$q = trim(strip_tags($_GET['term'])); // variabel $q untuk mengambil inputan user
 $q = $_GET['term'];
-$sql = mysql_query("SELECT * FROM input_aset WHERE no_aset LIKE '%".$q."%'"); // menampilkan data yg ada didatabase yg sesuai dengan inputan user
-while ($data = mysql_fetch_array($sql)){
+$sql = mysqli_query($konek,"SELECT * FROM input_aset WHERE no_aset LIKE '%".$q."%'"); // menampilkan data yg ada didatabase yg sesuai dengan inputan user
+while ($data = mysqli_fetch_array($sql)){
 	//$result[] = htmlentities(stripslashes($data['nm_jabatan_eks'])); // manempilkan nama jabatan
 		
 		$row['value'] =$data['no_aset'];
