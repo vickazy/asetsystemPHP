@@ -120,12 +120,12 @@ else {
                             <table class=\"table\">
                                  <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Noreg</label>
-                        <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\">
+                        <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\" value=\"$r[noreg]\">
                     </div>
                     
                     <div class=\"form-group col-md-6\">
                         <label>Nama Karyawan</label>
-                        <input type=\"text\" class=\"form-control\"  name=\"karyawan\" placeholder=\"Nama Karyawan\">
+                        <input type=\"text\" class=\"form-control\"  name=\"karyawan\" placeholder=\"Nama Karyawan\" value=\"$r[pic]\">
                     </div>
         
                     <div class=\"form-group col-md-6\">
@@ -206,12 +206,12 @@ else {
         
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Koordinator</label>
-                        <input type=\"text\" class=\"form-control\" name=\"koordinator\" placeholder=\"Koordinator\" id=\"koordinator\">
+                        <input type=\"text\" class=\"form-control\" name=\"koordinator\" placeholder=\"Koordinator\" id=\"koordinator\" value=\"$r[koordinator]\">
                     </div>
         
                      <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Departemen</label>
-                        <input type=\"text\" class=\"form-control\" name=\"departemen\" placeholder=\"Departemen\">
+                        <input type=\"text\" class=\"form-control\" name=\"departemen\" placeholder=\"Departemen\" value=\"$r[departemen]\">
                     </div>
         
                     <div class=\"form-group col-md-6\">
@@ -226,7 +226,7 @@ else {
         
                     <div class=\"form-group col-md-12\">
                         <label>Keterangan</label>
-                        <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\"></textarea>
+                        <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\">$r[keterangan]</textarea>
                     </div>
                     
                             </table>
