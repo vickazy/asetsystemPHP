@@ -1,4 +1,5 @@
 <?php
+//pembaharuan 
 include_once ('config/koneksi.php');
 
 //$q = trim(strip_tags($_GET['term'])); // variabel $q untuk mengambil inputan user
