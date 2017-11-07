@@ -95,6 +95,16 @@ else{
               } );
         </script>
 
+         <!-- Datapicker -->
+         <script>
+              $( function() {
+                $( "#datepickerpindah" ).datepicker({
+                  changeMonth: true,
+                  changeYear: true
+                });
+              } );
+        </script>
+
          <!-- Autocomplete me -->    
         <script>
                $(function(){

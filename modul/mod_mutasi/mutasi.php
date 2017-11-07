@@ -103,11 +103,13 @@ else {
                             <div class=\"form-group \">
                                 <label>No. Asset</label>
                                 <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\" value=\"$r[no_aset]\" readonly required>
+                                <input type=\"hidden\" name=\"no_asetawal\" value=\"$r[no_aset]\">
                             </div>
                             
                             <div class=\"form-group\">
                                 <label>Nama Asset</label>
                                 <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" value=\"$r[nama_aset]\" required>
+                                <input type=\"hidden\" name=\"nama_asetawal\" value=\"$r[nama_aset]\">
                             </div>
         
                 <div class=\"row\">
@@ -121,11 +123,13 @@ else {
                                  <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Noreg</label>
                         <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\" value=\"$r[noreg]\">
-                    </div>
+                        <input type=\"hidden\" name=\"noreg_awal\" value=\"$r[noreg]\">
+                        </div>
                     
                     <div class=\"form-group col-md-6\">
                         <label>Nama Karyawan</label>
                         <input type=\"text\" class=\"form-control\"  name=\"karyawan\" placeholder=\"Nama Karyawan\" value=\"$r[pic]\">
+                        <input type=\"hidden\" name=\"pic_awal\" value=\"$r[pic]\">
                     </div>
         
                     <div class=\"form-group col-md-6\">
@@ -207,30 +211,38 @@ else {
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Koordinator</label>
                         <input type=\"text\" class=\"form-control\" name=\"koordinator\" placeholder=\"Koordinator\" id=\"koordinator\" value=\"$r[koordinator]\">
+                        <input type=\"hidden\" name=\"koordinator_awal\" value=\"$r[koordinator]\">
                     </div>
         
                      <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Departemen</label>
                         <input type=\"text\" class=\"form-control\" name=\"departemen\" placeholder=\"Departemen\" value=\"$r[departemen]\">
-                    </div>
+                        <input type=\"hidden\" name=\"departemen_awal\" value=\"$r[departemen]\">
+                        
+                        </div>
         
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Cluster</label>
                         <input type=\"text\" class=\"form-control\" name=\"cluster\" placeholder=\"Cluster\">
-                    </div>
+                        <input type=\"hidden\" name=\"cluster_awal\" value=\"$r[cluster]\">
+                        
+                        </div>
 
                     <div class=\"form-group col-md-3\">
                         <label class=\"control-label\">Tgl. Terima</label>
-                        <input type=\"text\" class=\"form-control\" name=\"tgl_awal\"  id=\"datepicker\" value=\"$tanggal\">
-                    </div>
-                    <div class=\"form-group col-md-3\">
-                        <label class=\"control-label\">Tgl. Terima</label>
                         <input type=\"text\" class=\"form-control\" name=\"tgl_terima\"  id=\"datepicker\" value=\"$tanggal\">
+                         
+                        </div>
+                    <div class=\"form-group col-md-3\">
+                        <label class=\"control-label\">Tgl. Pindah</label>
+                        <input type=\"text\" class=\"form-control\" name=\"tgl_pindah\"  id=\"datepickerpindah\" value=\"$tanggal\">
                     </div>  
         
                     <div class=\"form-group col-md-12\">
                         <label>Keterangan</label>
                         <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\">$r[keterangan]</textarea>
+                        <input type=\"hidden\" name=\"keterangan_awal\" value=\"$r[keterangan]\">
+                        
                     </div>
                     
                             </table>
