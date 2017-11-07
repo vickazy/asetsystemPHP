@@ -17,10 +17,21 @@ else {
         $aksi = "modul/mod_mutasi/aksi_mutasi.php";
         $act = isset($_GET['act']) ? $_GET['act'] : '';
 
-   switch($act){
-        //tampil data mutasi 
+   switch($act){ 
         default:
-            echo "<h2>Mutasi Add</h2>";
+            	//Tampil data mutasi
+			echo "<div>
+            <ul class=\"breadcrumb\">
+                <li>
+                    <a href=\"?module=beranda\">Home</a>
+                </li>
+                <li>
+                    <a href=\"?module=mutasi\">Mutasi</a>
+                </li>
+            </ul>
+            </div>";
+
+
         break;
    }     
 }
