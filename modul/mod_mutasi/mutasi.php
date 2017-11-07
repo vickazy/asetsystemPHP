@@ -14,5 +14,13 @@ if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
 </div>";
 }
 else {
-        
+        $aksi = "modul/mod_mutasi/aksi_mutasi.php";
+        $act = isset($_GET['act']) ? $_GET['act'] : '';
+
+   switch($act){
+        //tampil data mutasi 
+        default:
+            echo "<h2>Mutasi Add</h2>";
+        break;
+   }     
 }
