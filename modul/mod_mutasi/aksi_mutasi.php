@@ -20,5 +20,16 @@ else{
 
         if($module=='mutasi' AND $act=='update'){
                 $no_aset = $_POST['no_aset'];
+                $nama_aset = $_POST['nama_aset'];
+                $noreg = $_POST['noreg'];
+                $pic = $_POST['pic'];
+                $koordinator = $_POST['koordinator'];
+                $area = $_POST['area'];
+                $tgl_terima = $_POST['tgl_terima'];
+                $departemen = $_POST['departemen'];
+                $tgl_pindah = $_POST['tgl_pindah'];
+                $keterangan = $_POST['keterangan'];
+
+
         }
 }
