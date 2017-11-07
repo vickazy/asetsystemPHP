@@ -95,6 +95,13 @@ else{
             include "modul/mod_mutasi/mutasi.php";
         }
     }
+
+    //data tanda terima 
+    elseif($_GET['module']=='tandaterima'){
+        if($_SESSION['leveluser']=='admin' OR $_SESSION['leveluser']=='user'){
+            include "modul/mod_tandaterima/tandaterima.php";
+        }
+    }
     
     
   else{
