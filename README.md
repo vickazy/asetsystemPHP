@@ -1,2 +1,2 @@
 # asetsistemmagang
-App Aset dengan PHP, buatan ku
+Aset System Ini masih Sangat sederhana, sistem manajemen aset dengan menggunakan PHP Native, MySQli
