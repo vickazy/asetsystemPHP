@@ -108,6 +108,7 @@ else {
             ";
             echo "</div>";
             echo "
+            <div>
             <div class=\"box <col-md-12>\">
             <div class=\"box-inner\">
             <div class=\"box-header well\" data-original-title=\"\">
@@ -187,12 +188,20 @@ else {
                             <option value=\"menara seluler nusantara\">Menara Seluler Nusantara</option>
                             <option value=\"bintang baja sinar cemerlang\">Bintang Baja Sinar Cemerlang</option>
                         </select>
+                        </div><br><br>
+                        <div class=\"form-group\">
+                            <label>Cluster Baru</label>
+                            <input type=\"text\" name=\"cluster\" class=\"form-control\">
                         </div>
 
+                        <div class=\"form-group\">
+                            <label>Departemen Baru</label>
+                            <input type=\"text\" name=\"departemen\" class=\"form-control\">
+                        </div>
                         ";        
 
             echo "</form></div>
-            </div>>/div>";
+            </div>";
 
         break;
    }     
