@@ -1,4 +1,5 @@
 # asetsistemmagang
+Penjelasan
 Sistem Aset ini bertujuan untuk memonitoring pergerakan aset perusahaan secara global, baik dalam perusahaan maupun dilapangan secara menyeluruh. 
 
 Terdiri dari beberapa fiture yaitu 

@@ -129,8 +129,13 @@ else{
                     minLength:2,
                     select:function(even, data){
                         $('input[name=no_aset]').val(data.item.no_aset);
+                        $('input[name=nama_aset]').val(data.item.nama_aset);
                         $('input[name=noreg]').val(data.item.noreg);
-                        $('input[name=no_aset]').val(data.item.no_aset);    
+                        $('input[name=pic]').val(data.item.pic); 
+                        $('input[name=departemen]').val(data.item.departemen);
+                        $('input[name=area]').val(data.item.area);
+                        $('input[name=koordinator_awal]').val(data.item.koordinator);
+                        $('input[name=tgl_terima]').val(data.item.tgl_terima);   
                     }
                 });
             });

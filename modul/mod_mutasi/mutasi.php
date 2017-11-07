@@ -120,7 +120,7 @@ else {
                             <table class=\"table\">
                                  <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Noreg</label>
-                        <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\">
+                        <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\">
                     </div>
                     
                     <div class=\"form-group col-md-6\">
