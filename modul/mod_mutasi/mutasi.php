@@ -71,6 +71,9 @@ else {
         break;
 
         case "editmutasi":
+        $tampil = "SELECT * FROM input_aset WHERE id_input='$_GET[id]'";
+        $hasil  = mysqli_query($konek, $tampil);
+        $r = mysqli_fetch_array($hasil);
             echo "<div>
             <ul class=\"breadcrumb\">
                 <li>
@@ -96,6 +99,7 @@ else {
                     </div>
                     <div class=\"box-content\">
                         <form role=\"form\" method=\"POST\"  action=\"$aksi?module=mutasi&act=update\">
+                        <input type=\"hidden\" name=\"id\" value=\"$r[id_input]\">
                             <div class=\"form-group \">
                                 <label>No. Asset</label>
                                 <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\" required>
