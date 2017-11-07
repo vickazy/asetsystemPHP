@@ -1,5 +1,5 @@
 <?php
-//mutasi aset
+//mutasi aset Herry Prasetyo
 if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
     echo "<link href=\"../css/style_login.css\" type=\"text/css\" rel=\"stylesheet\">
     <p class=\"error-code\"> 404</p>
