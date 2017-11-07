@@ -102,12 +102,12 @@ else {
                         <input type=\"hidden\" name=\"id\" value=\"$r[id_input]\">
                             <div class=\"form-group \">
                                 <label>No. Asset</label>
-                                <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\" required>
+                                <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\" value=\"$r[no_aset]\" readonly required>
                             </div>
                             
                             <div class=\"form-group\">
                                 <label>Nama Asset</label>
-                                <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
+                                <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" value=\"$r[nama_aset]\" required>
                             </div>
         
                 <div class=\"row\">

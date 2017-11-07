@@ -122,6 +122,20 @@ else{
             });
         </script>
 
+        <script>
+            $(function(){
+                $("#noaset").autocomplete({
+                    source : "auto3.php",
+                    minLength:2,
+                    select:function(even, data){
+                        $('input[name=no_aset]').val(data.item.no_aset);
+                        $('input[name=noreg]').val(data.item.noreg);
+                        $('input[name=no_aset]').val(data.item.no_aset);    
+                    }
+                });
+            });
+        </script>    
+
     <script>
     function previewFiles() {
 
