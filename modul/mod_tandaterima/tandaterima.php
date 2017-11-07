@@ -16,4 +16,6 @@ echo "<link href=\"../css/style_login.css\" type=\"text/css\" rel=\"stylesheet\"
 else {
       $aksi = "modul/mod_tandaterima/aksi_tandaterima.php";
       $act = isset($_GET['act']) ? $_GET['act'] : '';
+
+      
 }
