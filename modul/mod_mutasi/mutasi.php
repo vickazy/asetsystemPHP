@@ -17,7 +17,7 @@ if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
 else {
         $aksi = "modul/mod_mutasi/aksi_mutasi.php";
         $act = isset($_GET['act']) ? $_GET['act'] : '';
-         $tanggal = date('dmY');
+        $tanggal = date('d-m-Y');
 
    switch($act){ 
         default:
@@ -230,7 +230,7 @@ else {
 
                     <div class=\"form-group col-md-3\">
                         <label class=\"control-label\">Tgl. Terima</label>
-                        <input type=\"text\" class=\"form-control\" name=\"tgl_terima\"  id=\"datepicker\" value=\"$tanggal\">
+                        <input type=\"text\" class=\"form-control\" name=\"tgl_terima\"   value=\"$r[tgl_terima]\" readonly>
                          
                         </div>
                     <div class=\"form-group col-md-3\">
