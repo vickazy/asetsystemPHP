@@ -58,11 +58,16 @@ else{
     <table class=\"table table-striped table-bordered bootstrap-datatable datatable responsive\" id=\"history\">
     <thead>
     <tr>
-        <th>Noreg</th>
         <th>No Aset</th>
         <th>Nama Aset</th>
+        <th>Noreg</th>
+        <th>PIC</th>
         <th>Area</th>
-        <th>Tgl.Terima</th>
+        <th>Customer</th>
+        <th>Cluster</th>
+        <th>Tgl.Pindah</th>
+        <th>Keterangan</th>
+        <th>Status</th>
         <th>Tools</th>  
     </tr>
     </thead>";
