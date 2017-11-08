@@ -69,39 +69,37 @@ else{
         
         $querySave = "INSERT mutasi_aset SET id_input = '$id', 
                                              no_aset  ='$no_aset',
-                                             nama_aset ='$nama_aset',          
-                                             status ='$kondisi',
+                                             nama_aset ='$nama_aset',
                                              koordinator_baru ='$koordinator',
                                              pic_awal = '$_POST[pic_awal]',
                                              pic_baru = '$karyawan',
                                              departemen_baru = '$departemen',
-                                             customer= '$customer',
                                              noreg  = '$noreg', 
                                              tgl_terima = '$tglTerima', 
                                              tgl_pindah = '$tglPindah',
                                              keterangan 	 = '$keterangan',
                                              area 		 = '$area',
                                              username = '$_SESSION[namauser]'";  
-        $querygw=mysqli_query($konek,$querySave);   
-        echo "$querySave";        
-        //header("location:../../media.php?module=".$module);
-        // $query = "UPDATE input_aset SET no_aset  ='$no_aset',
-	// 				nama_aset  	 ='$nama_aset', 
-	// 				status	   	 ='$kondisi',
-	// 				koordinator	 ='$koordinator',
-	// 				pic 		   = '$karyawan',
-	// 				departemen     = '$departemen',
-	// 				customer 	   = '$customer',
-	// 				noreg  		   = '$noreg', 
-	// 				tgl_terima 	   = '$tglTerima', 
-	// 				keterangan 	   = '$keterangan',
-	// 				area 		   = '$area',
-	// 				cluster		   = '$_POST[cluster]'
-        //                   WHERE id_input = '$id'";
-
-        // mysqli_query($konek,$query);
-
+        mysqli_query($konek,$querySave);   
               
         
+        $query = "UPDATE input_aset SET no_aset  ='$no_aset',
+					nama_aset  	 ='$nama_aset', 
+					status	   	 ='$kondisi',
+					koordinator	 ='$koordinator',
+					pic 		   = '$karyawan',
+					departemen     = '$departemen',
+					customer 	   = '$customer',
+					noreg  		   = '$noreg', 
+					tgl_terima 	   = '$tglTerima', 
+					keterangan 	   = '$keterangan',
+					area 		   = '$area',
+					cluster		   = '$_POST[cluster]'
+                          WHERE id_input = '$id'";
+
+        mysqli_query($konek,$query);
+        header("location:../../media.php?module=".$module);
         }
+
+        
 }
