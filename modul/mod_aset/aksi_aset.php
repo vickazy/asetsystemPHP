@@ -123,15 +123,16 @@ else{
 							//echo $input;				
 			 $query = mysqli_query($konek, $input);
 			 if ($query) {
-			 		$query_history = "INSERT histori_aset SET noreg='$noreg',
-			 												  no_aset = '$no_aset',
-			 												  nama_aset='$nama_aset',
-			 												  area = '$area',
-			 												  customer= '$customer',
-															  cluster = '$cluster',
-															  tgl_terima = '$tglTerima', 
+			 		$query_history = "INSERT histori_aset SET noreg       ='$noreg',
+			 												  no_aset     = '$no_aset',
+			 												  nama_aset   ='$nama_aset',
+															  pic 		  = '$karyawan',
+			 												  area 		  = '$area',
+			 												  customer    = '$customer',
+															  cluster     = '$cluster',
+															  tgl_terima  = '$tglTerima', 
 															  koordinator = '$koordinator',
-															  keterangan = '$keterangan'";
+															  keterangan  = '$keterangan'";
 					mysqli_query($konek, $query_history);
 			 }
 			 header("location:../../media.php?module=".$module);
@@ -202,6 +203,7 @@ else{
 										gambar4        = '$fupload[3]' 
 					WHERE id_input = '$id'";
 		mysqli_query($konek, $update);
+
 		header("location:../../media.php?module=".$module);
 	}
 }

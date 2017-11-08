@@ -133,6 +133,7 @@ else {
                     </div>
         
                     <div class=\"form-group col-md-6\">
+                    <input type=\"hidden\" name=\"area_awal\" value=\"$r[area]\">
                                 <label class=\"control-label\">Area</label>
                                 <div >
                                     <select id=\"selectError\" name=\"area\" data-rel=\"chosen\">
@@ -175,6 +176,7 @@ else {
                             </div>
                             
                             <div class=\" form-group col-md-6\">
+                            <input type=\"hidden\" name=\"status_awal\" value=\"$r[status]\">
                             <label class=\"control-label\" >Kondisi Aset</label>
                             <div class=\"controls\">
                                 <select id=\"selectError\" name=\"kondisi\" data-rel=\"chosen\">
@@ -191,6 +193,7 @@ else {
                             </div>
                         </div>
                              <div class=\" form-group col-md-12\">
+                             <input type=\"hidden\" name=\"customer_awal\" value=\"$r[customer]\">
                                 <label class=\"control-label\" name=\"customer\">Customer</label>
                                 <div class=\"controls\">
                                     <select id=\"selectError\" name=\"customer\" data-rel=\"chosen\">
