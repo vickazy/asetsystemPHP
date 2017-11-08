@@ -58,13 +58,13 @@ else {
                             <div class=\"form-group \">
                                 <label>No. Asset</label>
                                 <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\"   required>
-                                <input type=\"hidden\" name=\"no_asetawal\" >
+                               
                             </div>
                             
                             <div class=\"form-group\">
                                 <label>Nama Asset</label>
                                 <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
-                                <input type=\"hidden\" name=\"nama_asetawal\">
+                               
                             </div>
         
                 <div class=\"row\">
@@ -78,13 +78,13 @@ else {
                                  <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Noreg</label>
                         <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\" >
-                        <input type=\"hidden\" name=\"noreg_awal\" >
+                      
                         </div>
                     
                     <div class=\"form-group col-md-6\">
                         <label>Nama Karyawan</label>
                         <input type=\"text\" class=\"form-control\"  name=\"karyawan\" placeholder=\"Nama Karyawan\" >
-                        <input type=\"hidden\" name=\"pic_awal\">
+                        
                     </div>
         
                     <div class=\"form-group col-md-6\">
@@ -166,20 +166,22 @@ else {
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Koordinator</label>
                         <input type=\"text\" class=\"form-control\" name=\"koordinator\" placeholder=\"Koordinator\" id=\"koordinator\">
-                        <input type=\"hidden\" name=\"koordinator_awal\">
+                    
                     </div>
         
                      <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Departemen</label>
                         <input type=\"text\" class=\"form-control\" name=\"departemen\" placeholder=\"Departemen\" >
-                        <input type=\"hidden\" name=\"departemen_awal\" value=\"$r[departemen]\">
+                        
+
                         
                         </div>
         
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Cluster</label>
                         <input type=\"text\" class=\"form-control\" name=\"cluster\" placeholder=\"Cluster\">
-                        <input type=\"hidden\" name=\"cluster_awal\" value=\"$r[cluster]\">
+                      
+
                         
                         </div>
 
@@ -195,8 +197,8 @@ else {
         
                     <div class=\"form-group col-md-12\">
                         <label>Keterangan</label>
-                        <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\">$r[keterangan]</textarea>
-                        <input type=\"hidden\" name=\"keterangan_awal\" value=\"$r[keterangan]\">
+                        <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\"></textarea>
+                     
                         
                     </div>
                     
