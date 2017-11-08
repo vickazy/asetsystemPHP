@@ -99,31 +99,52 @@ else {
         
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Merk</label>
-                        <input type=\"text\" class=\"form-control\" name=\"Merk\" placeholder=\"Cluster\">
-                        </div>
+                        <input type=\"text\" class=\"form-control\" name=\"merk\" placeholder=\"Merk\">
+                    </div>
+
+                    <div class=\"form-group col-md-6\">
+                    <label class=\"control-label\">Type</label>
+                    <input type=\"text\" class=\"form-control\" name=\"type\" placeholder=\"Type\">
+                    </div>
+
+                    <div class=\"form-group col-md-6\">
+                    <label class=\"control-label\">Warna</label>
+                    <input type=\"text\" class=\"form-control\" name=\"warna\" placeholder=\"Warna\">
+                    </div>
+
+                    <div class=\"form-group col-md-6\">
+                    <label class=\"control-label\">Serial Number</label>
+                    <input type=\"text\" class=\"form-control\" name=\"serial_number\" placeholder=\"Serial Number\">
+                    </div>
+
+                    <div class=\"form-group col-md-6\">
+                        <label class=\"control-label\">No. Proposal</label>
+                     <input type=\"text\" class=\"form-control\" name=\"no_proposal\" placeholder=\"No. Proposal\">
+                    </div>
 
                     <div class=\"form-group col-md-12\">
                         <label>Keterangan</label>
                         <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\"></textarea>
                     </div>
-                    
                             </table>
                         </div>
                     </div>
                 </div>
                 <!--/span-->
         </div><!--/row--> 
-             
-             
-                    <button type=\"submit\" class=\"btn btn-default\">Save</button> | 
-                    <button type=\"button\" class=\"btn btn-warning\" onclick=\"self.history.back()\">Cancel</button>
-              
+                    <button type=\"submit\" name=\"btnadd\" class=\"btn btn-default\">Add</button> 
                 </form>
           
                     </div>
                 </div>
             </div>
             <!--/span-->
-        
+            
+        <div class=\"row\">
+
+        </div>
+
+
+
         </div><!--/row-->";
    }     
