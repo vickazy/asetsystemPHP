@@ -47,7 +47,7 @@ else {
                 </div>
             </div>
             <div class=\"box-content\">
-            <table class=\"table table-striped table-bordered bootstrap-datatable datatable responsive\">
+            <table class=\"table table-striped table-bordered bootstrap-datatable datatable responsive\" id=-\"mutasi\">
             <thead>
             <tr>
                 <th>No Aset</th>

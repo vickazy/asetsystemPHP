@@ -84,22 +84,22 @@ else{
         echo "$querySave"; 
               
         
-        // $query = "UPDATE input_aset SET no_aset  ='$no_aset',
-	// 				nama_aset  	 ='$nama_aset', 
-	// 				status	   	 ='$kondisi',
-	// 				koordinator	 ='$koordinator',
-	// 				pic 		   = '$karyawan',
-	// 				departemen     = '$departemen',
-	// 				customer 	   = '$customer',
-	// 				noreg  		   = '$noreg', 
-	// 				tgl_terima 	   = '$tglTerima', 
-	// 				keterangan 	   = '$keterangan',
-	// 				area 		   = '$area',
-	// 				cluster		   = '$_POST[cluster]'
-        //                   WHERE id_input = '$id'";
+        $query = "UPDATE input_aset SET no_aset  ='$no_aset',
+					nama_aset  	 ='$nama_aset', 
+					status	   	 ='$kondisi',
+					koordinator	 ='$koordinator',
+					pic 		   = '$karyawan',
+					departemen     = '$departemen',
+					customer 	   = '$customer',
+					noreg  		   = '$noreg', 
+					tgl_terima 	   = '$tglTerima', 
+					keterangan 	   = '$keterangan',
+					area 		   = '$area',
+					cluster		   = '$_POST[cluster]'
+                          WHERE id_input = '$id'";
 
-        // mysqli_query($konek,$query);
-        // header("location:../../media.php?module=".$module);
+        mysqli_query($konek,$query);
+        header("location:../../media.php?module=".$module);
 
 
         }
