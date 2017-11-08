@@ -64,7 +64,6 @@ else{
         <th>Area</th>
         <th>Customer</th>
         <th>Cluster</th>
-      
         <th>Keterangan</th>
         <th>Status</th>
         <th>Tools</th>  
