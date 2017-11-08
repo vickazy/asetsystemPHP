@@ -42,18 +42,18 @@ else{
                 $tgl_pindah = $_POST['tgl_pindah'];
                 $keterangan = $_POST['keterangan'];
 
-        $query = "UPDATE input_aset SET no_aset   = '%s',
-                                        nama_aset = '%s',
-                                        noreg     = '%s', 
-                                        area      = '%s', 
-                                        customer  = '%s',
-                                        pic       = '%s' 
-                     WHERE id_input = %d";
+        $query = "UPDATE input_aset SET no_aset   = '$no_aset',
+                                        nama_aset = '$nama_aset',
+                                        noreg     = '$noreg', 
+                                        area      = '$area', 
+                                        customer  = '$customer',
+                                        pic       = '$pic' 
+                     WHERE id_input = '$d'";
 
-        $run_query = sprintf($query, $no_aset,
-                        $nama_aset, $noreg, 
-                        $area, $customer,
-                        $pic,$id);
+        // $run_query = sprintf($query, $no_aset,
+        //                 $nama_aset, $noreg, 
+        //                 $area, $customer,
+        //                 $pic,$id);
         mysqli_query($konek,$run_query);
         }
 }
