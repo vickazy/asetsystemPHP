@@ -1,4 +1,5 @@
 <?php
+//belajarOOP
     class mutasi{
         private $id_mutasi;
         private $noreg;
