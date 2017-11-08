@@ -122,19 +122,19 @@ else{
 
 							//echo $input;				
 			 $query = mysqli_query($konek, $input);
-			 if ($query) {
-			 		$query_history = "INSERT histori_aset SET noreg       ='$noreg',
-			 												  no_aset     = '$no_aset',
-			 												  nama_aset   ='$nama_aset',
-															  pic 		  = '$karyawan',
-			 												  area 		  = '$area',
-			 												  customer    = '$customer',
-															  cluster     = '$cluster',
-															  tgl_terima  = '$tglTerima', 
-															  koordinator = '$koordinator',
-															  keterangan  = '$keterangan'";
-					mysqli_query($konek, $query_history);
-			 }
+			//  if ($query) {
+			//  		$query_history = "INSERT histori_aset SET noreg       ='$noreg',
+			//  												  no_aset     = '$no_aset',
+			//  												  nama_aset   ='$nama_aset',
+			// 												  pic 		  = '$karyawan',
+			//  												  area 		  = '$area',
+			//  												  customer    = '$customer',
+			// 												  cluster     = '$cluster',
+			// 												  tgl_terima  = '$tglTerima', 
+			// 												  koordinator = '$koordinator',
+			// 												  keterangan  = '$keterangan'";
+			// 		mysqli_query($konek, $query_history);
+			//  }
 			 header("location:../../media.php?module=".$module);
 	}
 
