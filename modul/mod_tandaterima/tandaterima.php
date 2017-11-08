@@ -87,41 +87,27 @@ else {
                             <table class=\"table\">
                                  <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">No. Aset</label>
-                        <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\" >
+                        <input type=\"text\" class=\"form-control\" name=\"no_aset\" placeholder=\"Noreg\" id=\"noreg\" >
                       
                         </div>
                     
                     <div class=\"form-group col-md-6\">
-                        <label>No. Aset</label>
-                        <input type=\"text\" class=\"form-control\"  name=\"Nama Aset\" placeholder=\"Nama Karyawan\" >
-                        
+                        <label>Nama. Aset</label>
+                        <input type=\"text\" class=\"form-control\"  name=\"nama_aset\" placeholder=\"Nama Aset\" >
                     </div>
                     <br><br>
         
                     <div class=\"form-group col-md-6\">
-                        <label class=\"control-label\">Cluster</label>
-                        <input type=\"text\" class=\"form-control\" name=\"cluster\" placeholder=\"Cluster\">
+                        <label class=\"control-label\">Merk</label>
+                        <input type=\"text\" class=\"form-control\" name=\"Merk\" placeholder=\"Cluster\">
                         </div>
 
-                    <div class=\"form-group col-md-3\">
-                        <label class=\"control-label\">Tgl. Terima</label>
-                        <input type=\"text\" class=\"form-control\" name=\"tgl_terima\"  id=\"datepicker\" value=\"$tanggal\">
-                         
-                        </div>
-                    <div class=\"form-group col-md-3\">
-                        <label class=\"control-label\">Tgl. Pindah</label>
-                        <input type=\"text\" class=\"form-control\" name=\"tgl_pindah\"  id=\"datepickerpindah\" value=\"$tanggal\">
-                    </div>  
-        
                     <div class=\"form-group col-md-12\">
                         <label>Keterangan</label>
                         <textarea cols=\"10\" rows=\"15\" name=\"keterangan\" class=\"form-control\"></textarea>
-                     
-                        
                     </div>
                     
                             </table>
-        
                         </div>
                     </div>
                 </div>
