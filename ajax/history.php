@@ -16,11 +16,17 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ( $_SERVER['HTTP_X_REQUESTED_WIT
 
     
     $columns = array(
-        array('db' => 'noreg', 'dt' => 'noreg'),
+        
         array('db' => 'no_aset', 'dt' => 'no_aset'),
         array('db' => 'nama_aset', 'dt' => 'nama_aset'),
+        array('db' => 'pic', 'dt' =>'pic'),
+        array('db' => 'noreg', 'dt' => 'noreg'),
         array('db' => 'area', 'dt' =>'area'),
-        array('db' => 'tgl_terima','dt'=>'tgl_terima'),
+        array('db' => 'customer', 'dt' => 'customer'),
+        array('db' => 'cluster', 'dt' => 'cluster'),
+        array('db' => 'tgl_pindah','dt'=>'tgl_pindah'),
+        array('db' => 'keterangan', 'dt' => 'keterangan'),
+        array('db' => 'status', 'dt' => 'status'),
         array(
             'db' => 'id_histori',
             'dt' => 'tools',
