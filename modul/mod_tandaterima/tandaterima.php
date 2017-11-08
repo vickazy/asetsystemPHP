@@ -25,21 +25,7 @@ else {
                     <a href=\"?module=mutasi\">Mutasi</a>
                 </li>
             </ul>
-             </div>";
-        // $tampil = "SELECT * FROM input_aset WHERE id_input='$_GET[id]'";
-        // $hasil  = mysqli_query($konek, $tampil);
-        // $r = mysqli_fetch_array($hasil);
-            echo "<div>
-            <ul class=\"breadcrumb\">
-                <li>
-                    <a href=\"?module=beranda\">Home</a>
-                </li>
-                <li>
-                    <a href=\"?module=mutasi\">Halaman Mutasi</a>
-                </li>
-            </ul>
-            </div>";
-            
+             </div>";    
             echo "<div class=\"row\">
             <div class=\"box col-md-12\">
                 <div class=\"box-inner\">
@@ -53,7 +39,7 @@ else {
                         </div>
                     </div>
                     <div class=\"box-content\">
-                        <form role=\"form\" method=\"POST\"  action=\"$aksi?module=mutasi&act=update\">
+                        <form role=\"form\" method=\"POST\"  action=\"#\">
                       
                             <div class=\"form-group \">
                                 <label>No. Asset</label>
