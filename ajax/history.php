@@ -24,7 +24,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ( $_SERVER['HTTP_X_REQUESTED_WIT
         array('db' => 'area', 'dt' =>'area'),
         array('db' => 'customer', 'dt' => 'customer'),
         array('db' => 'cluster', 'dt' => 'cluster'),
-        array('db' => 'tgl_pindah','dt'=>'tgl_pindah'),
+        
         array('db' => 'keterangan', 'dt' => 'keterangan'),
         array('db' => 'status', 'dt' => 'status'),
         array(

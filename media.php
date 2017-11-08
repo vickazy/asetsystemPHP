@@ -406,11 +406,15 @@ else{
                     "serverSide": true,
                     "ajax": 'ajax/history.php',
                     "columns": [
-                        {"data":"noreg"},
                         {"data":"no_aset"},
                         {"data": "nama_aset"},
+                        {"data":"pic"},
+                        {"data":"noreg"},
                         {"data":"area"},
-                        {"data":"tgl_terima"},
+                        {"data": "customer"},
+                        {"data":"cluster"},
+                        {"data":"keterangan"},
+                        {"data":"status"},
                         {"data": "tools"}
                     ],
                     "order" : [[0, "desc"]]

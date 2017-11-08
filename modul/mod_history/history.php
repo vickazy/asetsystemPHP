@@ -65,7 +65,7 @@ else{
         <th>Area</th>
         <th>Customer</th>
         <th>Cluster</th>
-        <th>Tgl.Pindah</th>
+      
         <th>Keterangan</th>
         <th>Status</th>
         <th>Tools</th>  
@@ -77,13 +77,5 @@ else{
         </div>
     </div>";
 	 	break;
-
-
-    case "edithistory":
-       
-        break;
-
-
-
 	 }
 }
