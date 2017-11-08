@@ -133,7 +133,7 @@ else {
                 <!--/span-->
         </div><!--/row--> 
                     <button type=\"submit\" name=\"btnadd\" class=\"btn btn-default\">Add</button> 
-                </form>
+                
           
                     </div>
                 </div>
@@ -177,6 +177,7 @@ else {
                         </tbody>
                     </table>
                 </div>
+                </form>
             </div>
         </div>
     </div><!--/span-->";
