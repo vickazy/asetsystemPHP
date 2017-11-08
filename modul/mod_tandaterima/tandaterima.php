@@ -41,38 +41,38 @@ else {
                     <div class=\"box-content\">
                         <form role=\"form\" method=\"POST\"  action=\"$_SERVER[PHP_SELF]\">
                       
-                            <div class=\"form-group \">
+                            <div class=\"form-group col-md-6\">
                                 <label>No. Tanda Terima</label>
                                 <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\"   required>
                                
                             </div>
                             
-                            <div class=\"form-group\">
+                            <div class=\"form-group col-md-6\">
                                 <label>Tgl. Kirim Barang</label>
                                 <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                                
                             </div>
-                            <div class=\"form-group\">
+                            <div class=\"form-group col-md-6\">
                             <label>Noreg</label>
                             <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                             </div>
         
-                            <div class=\"form-group\">
+                            <div class=\"form-group col-md-6\">
                             <label>Nama Karyawan</label>
                             <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                            
                             </div>
-                            <div class=\"form-group\">
+                            <div class=\"form-group col-md-6\">
                             <label>Area</label>
                             <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                            
                             </div>
-                            <div class=\"form-group\">
+                            <div class=\"form-group col-md-6\">
                             <label>Cluster</label>
                             <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                            
                             </div>
-                            <div class=\"form-group\">
+                            <div class=\"form-group col-md-6\">
                             <label>Koordinator</label>
                             <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                            
@@ -101,9 +101,6 @@ else {
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Cluster</label>
                         <input type=\"text\" class=\"form-control\" name=\"cluster\" placeholder=\"Cluster\">
-                      
-
-                        
                         </div>
 
                     <div class=\"form-group col-md-3\">
