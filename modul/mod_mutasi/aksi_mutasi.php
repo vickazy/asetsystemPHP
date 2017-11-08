@@ -1,5 +1,4 @@
 <?php 
-
 function error_404(){
         ?>
         <link href=../../css/style_login.css type=text/css rel=stylesheet>
@@ -28,7 +27,9 @@ else{
         $module = $_GET['module'];
         $act = $_GET['act'];
 
+        //Update AND Add
         if($module=='mutasi' AND $act=='update'){
+              //deklarasikan Form mutasi  
                 $id = $_POST['id'];
                 $no_aset = $_POST['no_aset'];
                 $nama_aset = $_POST['nama_aset'];
@@ -37,7 +38,7 @@ else{
                 $customer = $_POST['customer'];
                 $koordinator = $_POST['koordinator'];
                 $koordinator_awal = $_POST['koordinator_awal'];
-
+                $kondisi  = $_POST['kondisi'];
                 $area = $_POST['area'];
                 $tgl_terima = $_POST['tgl_terima'];
                 $departemen = $_POST['departemen'];
@@ -51,11 +52,8 @@ else{
         $query = "UPDATE input_aset SET no_aset  ='$no_aset',
 					nama_aset  	 ='$nama_aset',
 					merk       	 ='$merk', 
-					type       	 ='$type', 
-					jenis_aset	 ='$jenis',
 					status	   	 ='$kondisi',
 					koordinator	 ='$koordinator',
-					nomor_proposal = '$no_proposal',
 					pic 		   = '$karyawan',
 					departemen     = '$departemen',
 					customer 	   = '$customer',
@@ -65,12 +63,38 @@ else{
 					keterangan 	   = '$keterangan',
 					area 		   = '$area',
 					cluster		   = '$cluster'
-                WHERE id_input = '$id'";
+                          WHERE id_input = '$id'";
 
         // $run_query = sprintf($query, $no_aset,
         //                 $nama_aset, $noreg, 
         //                 $area, $customer,
         //                 $pic,$id);
-        mysqli_query($konek,$run_query);
+        $myQry1 = mysqli_query($konek,$query);
+        //insert to mutasi aset
+        if($myQry1){
+                $querySave = "INSERT mutasi_aset SET id_input = '$id', 
+                                                     no_aset  ='$no_aset',
+					             nama_aset ='$nama_aset',
+					             merk   ='$merk',          
+					             status ='$kondisi',
+					             koordinator ='$koordinator',
+					             pic_baru = '$karyawan',
+					             departemen_baru = '$departemen',
+					             customer= '$customer',
+					             noreg  = '$noreg', 
+					             serial_number = '$serial_number', 
+					             tgl_terima = '$tglTerima', 
+                                                     tgl_pindah = '$tglPindah',
+					             keterangan 	   = '$keterangan',
+					             area 		   = '$area',
+					             cluster		   = '$cluster' 
+                
+                
+                
+                
+                ";
+        }
+              
+        
         }
 }
