@@ -83,7 +83,7 @@ else{
                                              area 		 = '$area',
                                              username = '$_SESSION[namauser]'";  
         $querygw=mysqli_query($konek,$querySave);   
-        echo "$querygw";        
+        echo "$querySave";        
         //header("location:../../media.php?module=".$module);
         // $query = "UPDATE input_aset SET no_aset  ='$no_aset',
 	// 				nama_aset  	 ='$nama_aset', 
