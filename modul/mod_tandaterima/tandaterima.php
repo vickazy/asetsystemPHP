@@ -30,7 +30,7 @@ else {
             <div class=\"box col-md-12\">
                 <div class=\"box-inner\">
                     <div class=\"box-header well\" data-original-title=\"\">
-                        <h2><i class=\"glyphicon glyphicon-edit\"></i> Form Mutasi</h2>
+                        <h2><i class=\"glyphicon glyphicon-edit\"></i> Data Transaksi</h2>
                         <div class=\"box-icon\"> 
                             <a href=\"#\" class=\"btn btn-minimize btn-round btn-default\"><i
                                     class=\"glyphicon glyphicon-chevron-up\"></i></a>
@@ -42,39 +42,63 @@ else {
                         <form role=\"form\" method=\"POST\"  action=\"#\">
                       
                             <div class=\"form-group \">
-                                <label>No. Asset</label>
+                                <label>No. Tanda Terima</label>
                                 <input type=\"text\" class=\"form-control\"  name=\"no_aset\" placeholder=\"No. Aset\"   required>
                                
                             </div>
                             
                             <div class=\"form-group\">
-                                <label>Nama Asset</label>
+                                <label>Tgl. Kirim Barang</label>
                                 <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
                                
                             </div>
+                            <div class=\"form-group\">
+                            <label>Noreg</label>
+                            <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
+                            </div>
         
+                            <div class=\"form-group\">
+                            <label>Nama Karyawan</label>
+                            <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
+                           
+                            </div>
+                            <div class=\"form-group\">
+                            <label>Area</label>
+                            <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
+                           
+                            </div>
+                            <div class=\"form-group\">
+                            <label>Cluster</label>
+                            <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
+                           
+                            </div>
+                            <div class=\"form-group\">
+                            <label>Koordinator</label>
+                            <input type=\"text\" class=\"form-control \" name=\"nama_aset\"  placeholder=\"Nama Aset\" required>
+                           
+                            </div>
                 <div class=\"row\">
                 <div class=\"box col-md-12\">
                     <div class=\"box-inner\">
                         <div class=\"box-header well\" data-original-title=\"\">
-                            <h2><i class=\"glyphicon glyphicon-user\"></i> Data PIC Baru</h2>
+                            <h2><i class=\"glyphicon glyphicon-user\"></i> Input Barang</h2>
                         </div>
                         <div class=\"box-content\">
                             <table class=\"table\">
                                  <div class=\"form-group col-md-6\">
-                        <label class=\"control-label\">Noreg</label>
+                        <label class=\"control-label\">No. Aset</label>
                         <input type=\"text\" class=\"form-control\" name=\"noreg\" placeholder=\"Noreg\" id=\"noreg\" >
                       
                         </div>
                     
                     <div class=\"form-group col-md-6\">
-                        <label>Nama Karyawan</label>
-                        <input type=\"text\" class=\"form-control\"  name=\"karyawan\" placeholder=\"Nama Karyawan\" >
+                        <label>No. Aset</label>
+                        <input type=\"text\" class=\"form-control\"  name=\"Nama Aset\" placeholder=\"Nama Karyawan\" >
                         
                     </div>
         
                     <div class=\"form-group col-md-6\">
-                                <label class=\"control-label\">Area</label>
+                                <label class=\"control-label\">Merk</label>
                                 <div >
                                     <select id=\"selectError\" name=\"area\" data-rel=\"chosen\">
                                     <option value=\"0\">-Pilih Data-</option>
@@ -116,7 +140,7 @@ else {
                             </div>
                             
                             <div class=\" form-group col-md-6\">
-                            <label class=\"control-label\" >Kondisi Aset</label>
+                            <label class=\"control-label\" >Type</label>
                             <div class=\"controls\">
                                 <select id=\"selectError\" name=\"kondisi\" data-rel=\"chosen\">
                                 <option value=\"0\">-Pilih Data-</option>
@@ -132,7 +156,7 @@ else {
                             </div>
                         </div>
                              <div class=\" form-group col-md-12\">
-                                <label class=\"control-label\" name=\"customer\">Customer</label>
+                                <label class=\"control-label\" name=\"customer\">Warna</label>
                                 <div class=\"controls\">
                                     <select id=\"selectError\" name=\"customer\" data-rel=\"chosen\">
                                     <option value=\"0\">-Pilih Data-</option>
@@ -151,7 +175,7 @@ else {
         
                     <div class=\"form-group col-md-6\">
                         <label class=\"control-label\">Koordinator</label>
-                        <input type=\"text\" class=\"form-control\" name=\"koordinator\" placeholder=\"Koordinator\" id=\"koordinator\">
+                        <input type=\"text\" class=\"form-control\" name=\"koordinator\" placeholder=\"Serial Number\" id=\"koordinator\">
                     
                     </div>
         
