@@ -70,6 +70,7 @@ else{
         $querySave = "INSERT mutasi_aset SET id_input = '$id', 
                                              no_aset  ='$no_aset',
                                              nama_aset ='$nama_aset',
+                                             koordinator = '$_POST[koordinator_awal]',
                                              koordinator_baru ='$koordinator',
                                              pic_awal = '$_POST[pic_awal]',
                                              pic_baru = '$karyawan',
@@ -100,17 +101,21 @@ else{
 
         mysqli_query($konek,$query);
         
-        $queryHistory = "INSERT history_aset SET nama_aset = '$_POST[nama_asetawal]',
+        $queryHistory = "INSERT histori_aset SET no_aset = '$_POST[no_asetawal]', 
+                                                 nama_aset = '$_POST[nama_asetawal]',
                                                  noreg     = '$_POST[noreg_awal]',
                                                  pic       = '$_POST[pic_awal]',
-                                                 koodinator = '$_POST[koordinator_awal]',
+                                                 koordinator = '$_POST[koordinator_awal]',
                                                  area       = '$_POST[area_awal]', 
                                                  customer   = '$_POST[customer_awal]',
                                                  cluster    = '$_POST[cluster_awal]',
                                                  tgl_terima 	   = '$tglTerima',
-                                                 keterangan 	   = '$_POST[keterangan_awal]'";
+                                                 keterangan 	   = '$_POST[keterangan_awal]',
+                                                 id_input = '$id'";
         mysqli_query($konek, $queryHistory);
+        echo "$queryHistory";
         
+        header("location:../../media.php?module=".$module);
         }
 
 
