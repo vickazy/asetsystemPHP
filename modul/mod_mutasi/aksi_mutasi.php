@@ -1,4 +1,5 @@
 <?php 
+session_start();
 function error_404(){
         ?>
         <link href=../../css/style_login.css type=text/css rel=stylesheet>
@@ -21,6 +22,14 @@ if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
     echo error_404();
 }
 else{
+        function InggrisTgl($tanggal){
+                $tgl=substr($tanggal,0,2);
+                $bln=substr($tanggal,3,2);
+                $thn=substr($tanggal,6,4);
+                $tanggal="$thn-$bln-$tgl";
+                return $tanggal;
+        }
+
         include "../../config/koneksi.php";
         include "../../config/function.php";
         //action         
@@ -36,6 +45,7 @@ else{
                 $noreg = $_POST['noreg'];
                 $pic = $_POST['karyawan'];
                 $customer = $_POST['customer'];
+                $karyawan  = $_POST['karyawan'];
                 $koordinator = $_POST['koordinator'];
                 $koordinator_awal = $_POST['koordinator_awal'];
                 $kondisi  = $_POST['kondisi'];
@@ -50,50 +60,43 @@ else{
                 $tglPindah = InggrisTgl($tgl_pindah);
                 
         $query = "UPDATE input_aset SET no_aset  ='$no_aset',
-					nama_aset  	 ='$nama_aset',
-					merk       	 ='$merk', 
+					nama_aset  	 ='$nama_aset', 
 					status	   	 ='$kondisi',
 					koordinator	 ='$koordinator',
 					pic 		   = '$karyawan',
 					departemen     = '$departemen',
 					customer 	   = '$customer',
 					noreg  		   = '$noreg', 
-					serial_number  = '$serial_number', 
 					tgl_terima 	   = '$tglTerima', 
 					keterangan 	   = '$keterangan',
 					area 		   = '$area',
-					cluster		   = '$cluster'
+					cluster		   = '$_POST[cluster]'
                           WHERE id_input = '$id'";
 
         // $run_query = sprintf($query, $no_aset,
         //                 $nama_aset, $noreg, 
         //                 $area, $customer,
         //                 $pic,$id);
-        $myQry1 = mysqli_query($konek,$query);
+        mysqli_query($konek,$query);
+
         //insert to mutasi aset
-        if($myQry1){
-                $querySave = "INSERT mutasi_aset SET id_input = '$id', 
-                                                     no_aset  ='$no_aset',
-					             nama_aset ='$nama_aset',
-					             merk   ='$merk',          
-					             status ='$kondisi',
-					             koordinator ='$koordinator',
-					             pic_baru = '$karyawan',
-					             departemen_baru = '$departemen',
-					             customer= '$customer',
-					             noreg  = '$noreg', 
-					             serial_number = '$serial_number', 
-					             tgl_terima = '$tglTerima', 
-                                                     tgl_pindah = '$tglPindah',
-					             keterangan 	   = '$keterangan',
-					             area 		   = '$area',
-					             cluster		   = '$cluster' 
-                
-                
-                
-                
-                ";
-        }
+        $querySave = "INSERT mutasi_aset SET id_input = '$id', 
+                                             no_aset  ='$no_aset',
+					     nama_aset ='$nama_aset',          
+					     status ='$kondisi',
+					     koordinator_baru ='$koordinator',
+                                             pic_awal = '$_POST[pic_awal]',
+					     pic_baru = '$karyawan',
+					     departemen_baru = '$departemen',
+					     customer= '$customer',
+					     noreg  = '$noreg', 
+					     tgl_terima = '$tglTerima', 
+                                             tgl_pindah = '$tglPindah',
+					     keterangan 	 = '$keterangan',
+					     area 		 = '$area',
+                                             username = '$_SESSION[namauser]'";
+                                                     
+        mysqli_query($konek,$querySave);
               
         
         }
